@@ -2,13 +2,31 @@ body, html {
     width: auto;
     height: auto;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(179, 179, 255);
+    background-color: rgb(255, 255, 255);
 }
 
+#container {
+    top: 30px;
+    outline:2px solid #000;
+    font-size: 0;
+    margin:auto;
+    height:600px;
+    width: 600px;
+    padding: 0;
+    border: none;
+}
 
 #title {
     display: flex;
     justify-content: center;
     margin: auto;
     padding-top: 3rem;
+}
+
+.boxStyles {
+    outline: 1px solid black;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
