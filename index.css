@@ -1,0 +1,14 @@
+body, html {
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(179, 179, 255);
+}
+
+
+#title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 3rem;
+}
