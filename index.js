@@ -1,4 +1,5 @@
 let mousedown = false;
+
 const container = document.querySelector("#container");
 
 //slider
@@ -15,20 +16,34 @@ slider.addEventListener("mouseup", () => {
 
 //hold to color
 container.addEventListener("mousedown", () => {
-    mousedown = true;
+  mousedown = true;
 });
 //release to not color
 container.addEventListener("mouseup", () => {
-    mousedown = false;
+  mousedown = false;
 });
-
+let eraseOn = false;
+//color method
 function onColor(e) {
-    if (!mousedown){
-        return
-    }
-    e.target.style.backgroundColor="#"+Math.floor(Math.random()*16777215).toString(16);
+  if (!mousedown) {
+    return;
+  }
+  if (!eraseOn) {
+    e.target.style.backgroundColor = colorWell.value;
+  } else {
+    e.target.style.backgroundColor = "#ffffff";
+  }
 }
 
+//erase method
+function erase() {
+  eraseOn = !eraseOn;
+}
+
+//delete all function
+function gridReset() {
+  createGrid(slider.value);
+}
 
 //box creation
 function createGrid(square) {

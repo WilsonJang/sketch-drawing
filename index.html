@@ -6,15 +6,31 @@
   </head>
   <body>
     <div>
-        <h1 id="title">Draw something</h1>
-      </div>
-      
-      <div class="slidecontainer">
-        <input type="range" min="16" max="80" value="16" id="gridSize">
-        <p>Grid size: <span id="size"></span></p>
-      </div>
+      <h1 id="title">Draw something</h1>
+    </div>
 
-      <div id="container"></div>
-      <script src="index.js"></script>
+    <!-- Slider -->
+    <div class="slidecontainer">
+      <input type="range" min="16" max="80" value="16" id="gridSize" />
+      <p>Grid size: <span id="size"></span></p>
+    </div>
+
+    <!--Delete-->
+    <div>
+      <button class="button delete" onclick="gridReset()">Delete</button>
+    </div>
+
+    <div>
+      <button class="button erase" onclick="erase()">Erase</button>
+    </div>
+
+    <!--Choose color-->
+    <div>
+      <label for="colorWell">Pick your color</label>
+      <input type="color" id="colorWell" value="#000000" />
+    </div>
+    <!--Grid creation Div-->
+    <div id="container"></div>
+    <script src="index.js"></script>
   </body>
 </html>
