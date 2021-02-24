@@ -7,10 +7,8 @@ html {
 }
 
 #container {
-  top: 30px;
   outline: 2px solid #000;
   font-size: 0;
-  margin: auto;
   height: 600px;
   width: 600px;
   padding: 0;
@@ -20,8 +18,8 @@ html {
 #title {
   display: flex;
   justify-content: center;
-  margin: auto;
   padding-top: 3rem;
+  margin: 0;
 }
 
 .boxStyles {
@@ -49,4 +47,37 @@ html {
 }
 .erase {
   background-color: blue;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#controls {
+  width: 300px;
+  margin: 0;
+}
+
+#grid-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  margin: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#control-container {
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
 }
